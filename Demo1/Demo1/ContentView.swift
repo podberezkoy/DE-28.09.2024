@@ -53,18 +53,7 @@ struct SignUpView: View {
     var body: some View {
         VStack {
             NavigationLink(destination: SignInView(), isActive: $userViewModel.isNavigate) {}
-                Text("Create an account")
-                    .fontWeight(.bold)
-                    .font(.custom("Roboto",size: 24))
-                    .padding(.top,20)
-                    .frame(maxWidth: .infinity, alignment: .leading)
-                Text("Complete the sign up process to get started")
-                    .foregroundColor(.gray)
-                    .padding(.bottom, 15) // Added spacing below this text
-                    .font(.custom("Roboto",size: 14))
-                    .frame(maxWidth: .infinity, alignment: .leading)
-                // Full Name Field
-                
+                CustomTitle(title: "Create an account", description: "Complete the sign up process to get started")
                 VStack {
                     CustomTextField(
                         isSecureField: false,
@@ -257,16 +246,7 @@ struct SignInView: View {
     var body: some View{
         NavigationLink(destination: HomeView(), isActive: $userViewModel.isNavigate) {}
         VStack{
-                Text("Welcome Back")
-                .fontWeight(.bold)
-                .font(.custom("Roboto",size: 24))
-                .padding(.top,20)
-                .frame(maxWidth: .infinity, alignment: .leading)
-                Text("Fill in your email and password to continue")
-                .foregroundColor(.gray)
-                .padding(.bottom, 15) // Added spacing below this text
-                .font(.custom("Roboto",size: 14))
-                .frame(maxWidth: .infinity, alignment: .leading)
+            CustomTitle(title: "Welcome Back", description: "Fill in your email and password to continue")
                 Group {
                     CustomTextField(
                         isSecureField: false,
@@ -384,15 +364,7 @@ struct ForgotPasswordView: View {
     var body: some View{
         VStack{
             VStack {
-                Text("Forgot Password")
-                    .fontWeight(.bold)
-                    .font(.custom("Roboto",size: 24))
-                    .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, alignment: .leading)
-                Text("Enter your email address")
-                    .foregroundColor(.gray)
-                    .font(.custom("Roboto",size: 14))
-                    .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, alignment: .leading)
-                    .padding(.bottom, 10)
+                CustomTitle(title: "Forgot Password", description: "Enter your email address")
                 CustomTextField(
                     isSecureField: false,
                     titleField: "Email address",
@@ -474,20 +446,9 @@ struct OTPView: View {
     var body: some View{
         VStack{
             VStack {
-                Text("OTP Verification")
-                    .fontWeight(.bold)
-                    .font(.custom("Roboto",size: 24))
-                    .padding(0)
-                    .padding(.leading, 24)
-                    .frame(maxWidth: .infinity, alignment: .leading)
-                Text("Enter the 6 digit numbers sent to your email")
-                    .foregroundColor(.gray)
-                    .padding(.bottom, 10)
-                    .padding(.leading, 24)
-                    .frame(maxWidth: .infinity, alignment: .leading)
+                CustomTitle(title: "OTP Verification", description: "Enter the 6 digit numbers sent to your email").padding(.leading, 24)
                 Group {
                         HStack{
-                            
                             CustomTextField(
                                 isSecureField: false,
                                 titleField: "",
@@ -626,15 +587,7 @@ struct NewPasswordView: View {
     var body: some View{
         VStack{
             VStack {
-                Text("New Password")
-                    .fontWeight(.bold)
-                    .font(.custom("Roboto",size: 24))
-                    .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, alignment: .leading)
-                Text("Enter your email address")
-                    .foregroundColor(.gray)
-                    .font(.custom("Roboto",size: 14))
-                    .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, alignment: .leading)
-                    .padding(.bottom, 10)
+                CustomTitle(title: "New Password", description: "Enter your email address")
                 CustomTextField(
                     isSecureField: false,
                     titleField: "Password",
@@ -693,7 +646,8 @@ struct HomeView: View {
     var body: some View{
         VStack{
             VStack {
-                Text("HOME")
+                Text("Home")
+                    .font(.custom("Roboto", size: 24))
             }
         }.navigationBarHidden(true)
     }

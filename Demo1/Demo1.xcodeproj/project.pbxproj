@@ -27,7 +27,7 @@
 		CE7BE80C2CA256BA00B738BA /* Demo1UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7BE80B2CA256BA00B738BA /* Demo1UITestsLaunchTests.swift */; };
 		CE7BE81C2CA25D6800B738BA /* CheckBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7BE81B2CA25D6800B738BA /* CheckBox.swift */; };
 		CE991A2F2CA645B300B85BD8 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE991A2E2CA645B300B85BD8 /* CustomTextField.swift */; };
-		CE991A312CA6547700B85BD8 /* CustomAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE991A302CA6547700B85BD8 /* CustomAlert.swift */; };
+		CE991A312CA6547700B85BD8 /* CustomTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE991A302CA6547700B85BD8 /* CustomTitle.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,7 +65,7 @@
 		CE7BE80B2CA256BA00B738BA /* Demo1UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Demo1UITestsLaunchTests.swift; sourceTree = "<group>"; };
 		CE7BE81B2CA25D6800B738BA /* CheckBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckBox.swift; sourceTree = "<group>"; };
 		CE991A2E2CA645B300B85BD8 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
-		CE991A302CA6547700B85BD8 /* CustomAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAlert.swift; sourceTree = "<group>"; };
+		CE991A302CA6547700B85BD8 /* CustomTitle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTitle.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -182,7 +182,7 @@
 			children = (
 				CE7BE81B2CA25D6800B738BA /* CheckBox.swift */,
 				CE991A2E2CA645B300B85BD8 /* CustomTextField.swift */,
-				CE991A302CA6547700B85BD8 /* CustomAlert.swift */,
+				CE991A302CA6547700B85BD8 /* CustomTitle.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -337,7 +337,7 @@
 				CE6662B32CA3B52E00DCCD41 /* UserModel.swift in Sources */,
 				CE7BE81C2CA25D6800B738BA /* CheckBox.swift in Sources */,
 				CE6662C22CA3B96900DCCD41 /* Repositories.swift in Sources */,
-				CE991A312CA6547700B85BD8 /* CustomAlert.swift in Sources */,
+				CE991A312CA6547700B85BD8 /* CustomTitle.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
