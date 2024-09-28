@@ -21,6 +21,10 @@ class UserViewModel: ObservableObject{
     @Published  var error: Bool = false
     
     func signUp() {
+        //     Функция регистрации в Supabase
+        //     28.09.2024
+        //     Юров Артем
+        //     Дополнительно реализован вывод ошибки
         
                     Task {
                         do {
@@ -43,6 +47,10 @@ class UserViewModel: ObservableObject{
                     }
                 }
     func signIn() {
+        //     Функция авторизации в Supabase
+        //     28.09.2024
+        //     Юров Артем
+        //     Дополнительно реализован вывод ошибки
                     Task {
                         do {
                             await MainActor.run {
