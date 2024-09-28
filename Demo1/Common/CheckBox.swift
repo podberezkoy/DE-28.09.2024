@@ -2,13 +2,17 @@
 //  CheckBox.swift
 //  Demo1
 //
-//  Created by user on 24.09.2024.
+//  Created by user on 28.09.2024.
 //
 
 import Foundation
 import SwiftUI
 
 struct CheckBox: View {
+    //     Кастомный чекбокс
+    //     28.09.2024
+    //     Юров Артем
+    //     Реализация чекбокс
     @Binding var value: Bool
     var body: some View {
         Group {

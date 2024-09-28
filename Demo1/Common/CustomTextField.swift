@@ -2,13 +2,16 @@
 //  CustomTextField.swift
 //  Demo1
 //
-//  Created by user on 27.09.2024.
+//  Created by user on 28.09.2024.
 //
 
 import Foundation
 import SwiftUI
 struct CustomTextField: View {
-    
+    //     Кастомные текстовые поля
+    //     28.09.2024
+    //     Юров Артем
+    //     Текстовые поля обычные и секретные с возможностью скрытия/показа данных
     let isSecureField: Bool
     let titleField: String
     let placeholderField: String
